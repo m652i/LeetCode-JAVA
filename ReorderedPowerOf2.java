@@ -1,3 +1,38 @@
+
+Starting with a positive integer N, we reorder the digits in any order (including the original order) such that the leading digit is not zero.
+
+Return true if and only if we can do this in a way such that the resulting number is a power of 2.
+
+ 
+
+Example 1:
+
+Input: 1
+Output: true
+Example 2:
+
+Input: 10
+Output: false
+Example 3:
+
+Input: 16
+Output: true
+Example 4:
+
+Input: 24
+Output: false
+Example 5:
+
+Input: 46
+Output: true
+ 
+
+Note:
+
+1 <= N <= 10^9
+
+
+
 since N < 10^9
 log2(1000000000) = 29 means only 29 numbers that are power of 2 under 1000000000
 29 is not that big of a number so might as well just make an array with the 29 numbers and check if the number entered is one of the 29.
