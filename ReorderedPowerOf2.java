@@ -63,16 +63,16 @@ Space isn't too much since the ArrayList will only be filled with 3 or 4 numbers
 
 class Solution {
     public boolean reorderedPowerOf2(int N) {
+        
         String num = Integer.toString(N);
         char [] n = num.toCharArray();
         Arrays.sort(n);
         num = new String(n);
-        int digits = 0;
-        for(char c : num.toCharArray()) digits++;
+        
         //now populate the power of 2 array
         ArrayList<String> p2arr = new ArrayList();
-        for(int i = 1; i <= (int) Math.pow(10, digits); i*=2){
-            if(i >= (int) Math.pow(10, digits-1)){
+        for(int i = 1; i <= (int) Math.pow(10, num.length()); i*=2){
+            if(i >= (int) Math.pow(10, num.length()-1)){
                 p2arr.add(Integer.toString(i));
             }
         }
@@ -84,6 +84,7 @@ class Solution {
                 return true;
             }
         }
+        
         
         return false;
         
