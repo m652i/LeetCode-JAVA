@@ -59,7 +59,7 @@ the rest takes way less time to change the big O.
 thus the run time of
 Runtime: 5 ms, faster than 99.33% of Java online submissions for Reordered Power of 2.
 
-Space isn't too much since the ArrayList will only be filled with 3 or 4 numbers.
+Space isnt too much since the ArrayList will only be filled with 3 or 4 numbers.
 
 class Solution {
     public boolean reorderedPowerOf2(int N) {
